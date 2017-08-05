@@ -1,0 +1,26 @@
+{
+  "name": "bot-generator-gif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": "6.2.1"
+  },
+  "dependencies": {
+    "gifencoder": "^1.0.6",
+    "handlebars": "^4.0.10",
+    "hapi": "^16.4.3",
+    "inert": "^4.2.0",
+    "png-file-stream": "^1.0.0",
+    "request": "^2.81.0",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "build": "npm install",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
