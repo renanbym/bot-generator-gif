@@ -16,8 +16,8 @@ const routes = [
             giphy.getAnyGif( (err, res) => {
                 if( err ) throw err;
                 let data = JSON.parse( res );
-                console.log(data.data[0]);
-                return reply.view('home', { data: data.data[0] });
+                console.log(data.data);
+                return reply.view('home', { image: data.data.fixed_width_downsampled_url });
             } );
 
         }
