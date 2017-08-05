@@ -14,21 +14,9 @@
 
     <script src="http://code.jquery.com/jquery-1.12.4.min.js" ></script>
     <script type="text/javascript">
-
-    $.post(
-        'hhttps://bot-generator-gif.herokuapp.com/',
-        {
-            id: 'https://bot-generator-gif.herokuapp.com/',
-            scrape: true
-        },
-        function(response){
-            console.log(response);
-        }
-    );
-
-    setTimeout(function(){
+    $( document ).ready(function() {
         $.post(
-            'hhttps://bot-generator-gif.herokuapp.com/',
+            'https://bot-generator-gif.herokuapp.com/',
             {
                 id: 'https://bot-generator-gif.herokuapp.com/',
                 scrape: true
@@ -38,8 +26,21 @@
             }
         );
 
+        setTimeout(function(){
+            $.post(
+                'https://bot-generator-gif.herokuapp.com/',
+                {
+                    id: 'https://bot-generator-gif.herokuapp.com/',
+                    scrape: true
+                },
+                function(response){
+                    console.log(response);
+                }
+            );
 
-    },5000);
+
+        },5000);
+    });
     </script>
 
 </style>
