@@ -21,6 +21,19 @@ const routes = [
             } );
 
         }
+    },
+    {
+        method: 'POST',
+        path: '/',
+        handler: (request, reply) => {
+            giphy.getAnyGif( (err, res) => {
+                if( err ) throw err;
+                let data = JSON.parse( res );
+                console.log(data.data);
+                return reply.view('home', { image: data.data.fixed_width_downsampled_url });
+            } );
+
+        }
     }
     ,{
         method: 'GET',
