@@ -16,9 +16,9 @@
     <script type="text/javascript">
     $( document ).ready(function() {
         $.post(
-            'https://bot-generator-gif.herokuapp.com/',
+            'https://comment-gif.herokuapp.com',
             {
-                id: 'https://bot-generator-gif.herokuapp.com/',
+                id: 'https://comment-gif.herokuapp.com',
                 scrape: true
             },
             function(response){
@@ -28,16 +28,15 @@
 
         setTimeout(function(){
             $.post(
-                'https://bot-generator-gif.herokuapp.com/',
+                'https://comment-gif.herokuapp.com',
                 {
-                    id: 'https://bot-generator-gif.herokuapp.com/',
+                    id: 'https://comment-gif.herokuapp.com',
                     scrape: true
                 },
                 function(response){
                     console.log(response);
                 }
             );
-
 
         },5000);
     });
@@ -48,13 +47,14 @@
 <body>
 
     <script>
-    // window.fbAsyncInit = function() {
-    //     FB.init({
-    //         appId      : '295346677493959',
-    //         xfbml      : true,
-    //         version    : 'v2.7'
-    //     });
-    // };
+
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '477966289268448',
+            xfbml      : true,
+            version    : 'v2.8'
+        });
+    };
 
     (function(d, s, id){
         var js, fjs = d.getElementsByTagName(s)[0];
